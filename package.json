@@ -1,0 +1,22 @@
+{
+  "name": "ksu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "изображения на сервере.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ksu07/programming-lessons-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ksu07/programming-lessons-1/issues"
+  },
+  "homepage": "https://github.com/Ksu07/programming-lessons-1#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}

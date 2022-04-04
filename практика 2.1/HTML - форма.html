@@ -1,0 +1,33 @@
+const http = require("http");
+<!DOCTYPE>
+    <body>
+        <form id = "form">
+            <input type = "file" id = "file_input">
+            <button type = "submit" id = "submit_button" > Save file </button> 
+        </form>   
+        <script>
+            let form = document.getElementById('form');
+            let input = document.getElementById('file_input');
+
+
+            form.addEventListener("submit", (e)  => {
+            e.preventDefault();
+            consol.log(input.files)
+            })
+
+const requestHandler = (request, response) => {
+    response.setHeader("Content-Type", "text/html");
+    response.write("<!DOCTYPE html>");
+    response.write("<html>");
+    response.write("<head>");
+    response.write("<title>Hello Node.js</title>");
+    response.write("<meta charset=\"utf-8\" />");
+    response.write("</head>");
+    response.write("<body><h2> Отправляет картинки на сервер </h2></body>");
+    response.write("</html>");
+    response.end();
+};
+http.createServer(requestHandler).listen(3000); 
+        </script> 
+    </body>
+</html>
